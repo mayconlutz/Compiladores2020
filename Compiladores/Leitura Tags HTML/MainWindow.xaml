@@ -5,8 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Leitura_Tags_HTML"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="600" Width="606">
     <Grid>
-        
+        <Button x:Name="BT_Abrir_Arquivo" Content="Abrir Arquivo" HorizontalAlignment="Left" Height="34" Margin="10,10,0,0" VerticalAlignment="Top" Width="117" Background="#FFC3C3C3" FontSize="14" Click="BT_Abrir_Arquivo_Click"/>
+        <ListBox x:Name="listBox" Background="#FFBFBFBF" Margin="10,49,10,10" >
+
+            <ListBox.Resources>
+                <SolidColorBrush x:Key="PrimaryHueMidBrush" Color="Black" />
+                <SolidColorBrush x:Key="MaterialDesignBody" Color="Black" />
+                    
+
+            </ListBox.Resources>
+
+
+        </ListBox>
+        <Label Content="Quantidade de Tags Encontradas:" HorizontalAlignment="Left" Margin="152,15,0,0" VerticalAlignment="Top" Width="187"/>
+        <Label x:Name="Qtd_Tags" Content="0" HorizontalAlignment="Left" Margin="336,16,0,0" VerticalAlignment="Top" Width="187" Background="{x:Null}" Foreground="#FF003AFF"/>
+
     </Grid>
 </Window>
