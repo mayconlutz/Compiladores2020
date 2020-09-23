@@ -1,0 +1,38 @@
+﻿<Window x:Class="Analisador_Lexico_Linguagem_C.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Analisador_Lexico_Linguagem_C"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="862">
+    <Grid>
+        <Button x:Name="BT_Abrir_Arquivo" Content="Abrir Arquivo" HorizontalAlignment="Left" Height="34" Margin="10,10,0,0" VerticalAlignment="Top" Width="117" Background="#FFC3C3C3" FontSize="14" Click="BT_Abrir_Arquivo_Click"/>
+        <ListBox x:Name="listBox_Reserved" Background="#FFBFBFBF" Margin="10,71,438,10" >
+
+            <ListBox.Resources>
+                <SolidColorBrush x:Key="PrimaryHueMidBrush" Color="Black" />
+                <SolidColorBrush x:Key="MaterialDesignBody" Color="Black" />
+
+
+            </ListBox.Resources>
+
+
+        </ListBox>
+        <Label Content="Quantidade de palavras reservadas:" HorizontalAlignment="Left" Margin="135,15,0,0" VerticalAlignment="Top" Width="201"/>
+        <Label x:Name="Qtd_Tags" Content="0" HorizontalAlignment="Left" Margin="336,16,0,0" VerticalAlignment="Top" Width="187" Background="{x:Null}" Foreground="#FF003AFF"/>
+        <ListBox x:Name="listBox" Background="#FFBFBFBF" Margin="430,71,18,10" >
+
+            <ListBox.Resources>
+                <SolidColorBrush x:Key="PrimaryHueMidBrush" Color="Black" />
+                <SolidColorBrush x:Key="MaterialDesignBody" Color="Black" />
+
+
+            </ListBox.Resources>
+
+
+        </ListBox>
+        <Label Content="Palavras Reservadas:" HorizontalAlignment="Left" Margin="10,45,0,0" VerticalAlignment="Top" Width="201"/>
+        <Label Content="Todas as palavras:" HorizontalAlignment="Left" Margin="430,45,0,0" VerticalAlignment="Top" Width="201"/>
+    </Grid>
+</Window>
